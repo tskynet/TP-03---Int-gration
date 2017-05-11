@@ -1,0 +1,69 @@
+*{margin:0;padding:0}
+body {min-width: 320px; font-family:Arial;}
+h1{font-size:22px; margin-top:40px}
+h2{margin-top:20px; margin-bottom:20px; font-size:18px; font-weight:normal}
+h3{font-size:22px ; margin-top:30px ;line-height:50px ; text-align:center}
+h4 {font-size:18px; margin-top:20px;margin-bottom:20px; color:white}
+
+.header{min-height:540px;background:url(../img/image.jpg) 50% 50% no-repeat}
+.header .login{text-align:center}
+.header a{margin-top:20px;text-decoration:none;color:white;border:2px solid white;border-radius:60px; line-height:36px;display:inline-block;padding:0 20px}
+.header .login a:first-child,.header a.logo {border-color:transparent;font-size:18px}	
+.header .medium-hide{text-align:center;margin-top:115px}
+.header .title{color:white;text-align:center}
+.header .title a{background:#FE4E50;border:0 none;font-weight:bold;line-height:38px;height:40px;margin-top:0;padding-left:50px;padding-right:50px}
+
+.block-three .img {height:240px;background: url(../img/image.jpg);margin-bottom:10px;border-radius:10px; position:relative}
+.block-three .img .abs{position:absolute; bottom:15px; left:0px;width:calc(100% - 40px);padding : 10px 20px; background : rgba(0,0,0,0.5);}
+.block-three .img .abs:hover{display:block;}
+.block-three .img .abs a{background:#FE4E50;text-decoration:none;color:white; font-size:10px;border-radius: 10px; height:20px; line-height:18px;display:inline-block;letter-spacing:3px;padding:0 10px}
+.block-three .img .abs p {font-size:13px;color:white}
+
+.block-four{text-align:center}
+.block-four .photo{position:relative; width: 120px; height: 120px; display: inline-block }
+.block-four .photo img{border-radius:50%;display:block}
+.block-four .photo i{border-radius:50%;border:2px solid white;color:white;background:red;width:32px;height:32px;text-align:center;line-height:30px;position:absolute;bottom:0;right:0}
+.block-four b{display: block; padding: 20px 0}
+.block-four p{max-width:220px;display:inline-block;font-size:12px;color:#666;margin-bottom:27px}
+
+.partners{text-align: center}
+.partners a{display: inline-block; box-sizing: border-box; min-width: calc(100% - 20px);text-decoration: none; border: 2px solid red; line-height: 36px; height: 38px; color: red; border-radius: 19px; padding: 0 75px}
+
+.activity .column div{width: 100%; height: 120px;background: url(../img/image.jpg) 50% 50%; margin-bottom: 10px;line-height: 120px; text-align: center; border-radius: 5px}
+.activity .column div h4{margin: 0; padding:0;line-height:22px;display:inline-block;vertical-align:middle}
+
+.newsletter p.column {text-align: center; color: #666;}
+.newsletter form {text-align:center; margin-top: 15px; margin-bottom: 40px}
+.newsletter form input[type="text"]{height: 38px; border: 1px solid #666; color: #666; border-radius: 5px; text-indent: 5px; width: calc(100% - 20px); margin-bottom: 10px}
+.newsletter form input[type="button"]{width: calc(100% - 20px); height: 38px; color: white; background-color: #FE4E50; border: 1px solid #FE4E50; border-radius: 19px; text-align: center}
+
+.footer.row {padding: 18px 0;}
+.footer a {text-decoration: none; color: #FE4E50}
+.footer {border-top: 5px solid #FE4E50; text-align: center}
+.footer li {display: inline-block; padding: 0 5px;}
+.footer li a{color: #666}
+.footer strong {display: inline-block; padding-top: 15px;}
+
+@media screen and (min-width:40rem){
+	h1{font-size:38px;margin-top:150px}
+	h2{margin-top:40px; margin-bottom:35px; font-size:20px}
+	h3{margin-top:65px ;line-height:90px ; text-align:center}
+
+	.header{min-height:700px}
+	.header .login{text-align:right}
+	.header a {margin-top: 40px;}
+	.header .title a {padding-left:20px; padding-right:20px}
+	.block-three .img {height:400px;}
+	.block-four .row.left {margin-left: calc(100% - 220px)} /*le calc avec margin etc c'est à retenir ! */
+	.block-four .row.right {margin-right: calc(100% - 220px)}
+	.partners a {min-width: 0}
+	.activity .column div {height: 310px; line-height:310px;margin-bottom: 20px}   /*BIG LINE HEIGHT, ON RECALLE UN SMALL LINEHEIGHT (type 20px) POUR NE PAS QUE CA SORT DE LA PAGE */
+	.newsletter form {margin-top: 40px; margin-bottom: 100px}
+	.newsletter form input[type="text"]{width: 240px;}
+	.newsletter form input[type="button"]{width: auto; padding-left: 25px; padding-right: 25px}
+	
+	.footer.row {padding: 38px 0; text-align: left;}
+	.footer ul{margin-top: 10px;}
+	.footer li {display: list-item; list-style-type: none; line-height: 26px; padding: 0}
+	.footer strong {padding: 0}
+}
